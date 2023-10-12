@@ -3,6 +3,7 @@
   \        (-1)  *  x
   /      ------------------- * sin(i * PI/4)
   --       (2i+1) * (2i-1)
+  i=1
 */ 
 
 #define _USE_MATH_DEFINES
