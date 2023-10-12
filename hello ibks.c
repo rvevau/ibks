@@ -2,7 +2,7 @@
 
 int main() {
   
-  printf("Hello Ibks!\n");
+  printf("hello ibks!\n");
   return 0;
   
 }
