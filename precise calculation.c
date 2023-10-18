@@ -15,7 +15,7 @@
 #define EPSILON 0.0001
 #define REAL long double
 
-double calculateSum(REAL x, double epsilon) {
+long double calculateSum(REAL x, long double epsilon) {
 
     REAL sum = 0, term;
 
@@ -41,7 +41,7 @@ int main() {
 
     SetConsoleOutputCP(1253);
 
-    REAL x = 1;
+    REAL x = 1; //x = 0.995
     REAL sum1 = calculateSum(x, EPSILON);
     REAL sum2 = calculateSum(x, DBL_EPSILON);
 
