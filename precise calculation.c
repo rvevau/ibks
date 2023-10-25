@@ -21,20 +21,16 @@ long double calculateSum(REAL x, long double epsilon) {
     REAL sum = 0, term;
 
     for (unsigned long long int i = 1; ; i++) {
-
+      
         term = ((pow(-1, i) * pow(x, 3 * i + 1)) / ((2 * i + 1) * (2 * i - 1))) * sin(i * M_PI_4);
-
+      
         if (fabs(term) < DBL_EPSILON && i % 4 != 0) {
-
             break;
-
         }
-
+      
         sum += term;
-
         printf("i = %d: %.16f\n", i, term);
     }
-
     return sum;
 }
 
@@ -42,7 +38,7 @@ int main() {
 
     SetConsoleOutputCP(1253);
 
-    REAL x = 0.995; //x = 0.995
+    REAL x = 0.995;
     REAL sum1 = calculateSum(x, EPSILON);
     REAL sum2 = calculateSum(x, DBL_EPSILON);
 
